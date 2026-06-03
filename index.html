@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>أكاديمية الفرقان -أكاديمية قرآنية متخصصة في تحفيظ القرآن الكريم وعلومه وتعليم التجويد أونلاين</title>
+  <title>أكاديمية الفرقان -لتحفيظ القرآن الكريم وتعليم التجويد أونلاين</title>
+  <link rel="icon" type="image/png" href="favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="icon" type="image/png" href="favicon.png">
   
   <!-- روابط ملفات CSS المنفصلة -->
   <link rel="stylesheet" href="style.css">
@@ -358,6 +358,91 @@
               <option value="canada" lang-key="country2">كندا</option>
               <option value="usa" lang-key="country3">الولايات المتحدة</option>
               <option value="uk" lang-key="country4">بريطانيا</option>
+              <option value="uae" lang-key="country5">الإمارات</option>
+              <option value="saudi" lang-key="country6">السعودية</option>
+              <option value="Lebanon" lang-key="country7">لبنان</option>
+              <option value="Kuwait " lang-key="country8">الكويت</option>
+              <option value="Bahrain " lang-key="country9">البحرين</option>
+              <option value="Jordan" lang-key="country10">الاردن</option>
+              <option value="Morocco" lang-key="country11">المغرب</option>
+              <option value="Oman" lang-key="country12">سلطنة عمان</option>
+              <option value="Qatar" lang-key="country13">قطر</option>
+              <option value="Turkey" lang-key="country14">تركيا</option>
+              <option value="Russia" lang-key="country15">روسيا</option>
+              <option value="Australia " lang-key="country16">استراليا</option>
+              <option value="Greece " lang-key="country17">اليونان</option>
+              <option value="France " lang-key="country18">فرنسا</option>
+              <option value="Italy " lang-key="country19">ايطاليا</option>
+              <option value="South Korea " lang-key="country20">كوريا الجنوبية</option>
+              <option value="Egypt" lang-key="country21"> مصر</option>
+              <option value="Algeria" lang-key="country22"> الجزائر</option>
+              <option value="other" lang-key="country23">دول أخرى</option>
+            </select>
+            <div class="error-message" id="country-error">الرجاء اختيار بلد الإقامة</div>
+          </div>
+          
+          <div class="form-group">
+            <label for="age" lang-key="form-age">عمر الطالب *</label>
+            <input type="number" id="age" name="age" required min="5" max="80">
+            <div class="error-message" id="age-error">الرجاء إدخال عمر صحيح بين 5 و 80 سنة</div>
+          </div>
+          
+          <div class="form-group">
+            <label for="level" lang-key="form-level">المستوى الحالي *</label>
+            <select id="level" name="level" required>
+              <option value="" lang-key="form-level-placeholder">اختر المستوى...</option>
+              <option value="beginner" lang-key="level1">مبتدئ (لا خبرة)</option>
+              <option value="intermediate" lang-key="level2">متوسط (أعرف القراءة)</option>
+              <option value="advanced" lang-key="level3">متقدم (أحفظ بعض السور)</option>
+              <option value="hafiz" lang-key="level4">حافظ (أرغب في المراجعة)</option>
+            </select>
+            <div class="error-message" id="level-error">الرجاء اختيار المستوى الحالي</div>
+          </div>
+          
+          <div class="form-group" style="grid-column: span 2;">
+            <label for="notes" lang-key="form-notes">ملاحظات إضافية</label>
+            <textarea id="notes" name="notes" rows="4" lang-key="form-notes-placeholder"></textarea>
+          </div>
+          
+          <button type="submit" lang-key="form-submit">
+            <i class="fas fa-paper-plane"></i> <span lang-key="form-submit-text">إرسال طلب الحجز</span>
+          </button>
+        </form>
+        
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <span>+20 1151793980</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>alfurqanacadmy4@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <i class="fas fa-question-circle"></i>
+        <h2><span lang-key="faq-title">أسئلة متكررة</span></h2>
+      </div>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span lang-key="faq1-question">ما هي مدة الدرس الواحد؟</span> <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p lang-key="faq1-answer">مدة الدرس 30 دقيقة للأطفال و45 دقيقة للكبار. يمكن تمديد المدة حسب رغبة الطالب والاتفاق مع المدرس.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <span lang-key="faq2-question">هل هناك شهادات معتمدة بعد الانتهاء؟</span> <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p lang-key="faq2-answer">نعم،              <option value="uk" lang-key="country4">بريطانيا</option>
               <option value="uae" lang-key="country5">الإمارات</option>
               <option value="saudi" lang-key="country6">السعودية</option>
               <option value="Lebanon" lang-key="country7">لبنان</option>
