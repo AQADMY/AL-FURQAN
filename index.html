@@ -1,0 +1,1149 @@
+l><!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أكاديمية الفرقان -أكاديمية قرآنية متخصصة في تحفيظ القرآن الكريم وعلومه وتعليم التجويد أونلاين</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
+  
+  <!-- روابط ملفات CSS المنفصلة -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+  <!-- شريط التقدم في الأعلى -->
+  <div class="progress-top" id="progressTop"></div>
+
+  <!-- زر العودة إلى الأعلى -->
+  <div class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <div class="language-switcher">
+    <button class="lang-btn active" data-lang="ar">العربية</button>
+    <button class="lang-btn" data-lang="en">English</button>
+    <button class="lang-btn" data-lang="fr">Français</button>
+  </div>
+
+  <!-- قائمة التنقل -->
+  <nav class="navigation">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="#about" class="active" lang-key="nav-about">من نحن</a></li>
+      <li class="nav-item"><a href="#features" lang-key="nav-features">المميزات</a></li>
+      <li class="nav-item"><a href="#teachers" lang-key="nav-teachers">المدرسون</a></li>
+      <li class="nav-item"><a href="#levels" lang-key="nav-levels">المستويات</a></li>
+      <li class="nav-item"><a href="#registration" lang-key="nav-registration">التسجيل</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="header-pattern"></div>
+    <div class="header-content">
+      <div class="logo-container">
+        <div class="logo">
+          <img src="logo.png" alt="أكاديمية الفرقان" class="header-logo">
+        </div>
+        <div>
+          <h1 lang-key="site-title">أكاديمية الفرقان</h1>
+          <p class="subtitle" lang-key="site-subtitle">تعليم القرآن والتجويد للأطفال والكبار أونلاين مع أفضل المدرسين</p>
+        </div>
+      </div>
+      <a href="#registration" class="cta-button" lang-key="free-trial-button">احجز حصتك المجانية الآن <i class="fas fa-arrow-left"></i></a>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="section" id="about">
+      <div class="section-title">
+        <i class="fas fa-info-circle"></i>
+        <h2><span lang-key="about-title">من نحن؟</span></h2>
+      </div>
+      <p lang-key="about-content">
+        أكاديمية الفرقان هي منصة تعليمية رائدة متخصصة في تعليم القرآن الكريم والتجويد واللغة العربية عن بُعد. نخدم طلاب الجاليات المسلمة في أوروبا وأمريكا والخليج العربي. نتميز بأساليب تعليمية حديثة، مع نخبة من المدرسين المؤهلين من الأزهر الشريف، حيث نقدم تجربة تعليمية تفاعلية وممتعة تناسب جميع الأعمار.
+      </p>
+      
+      <div class="counter">
+        <div class="counter-item">
+          <div class="counter-number" id="students-counter">0</div>
+          <div class="counter-text">طالب مسجل</div>
+        </div>
+        <div class="counter-item">
+          <div class="counter-number" id="teachers-counter">0</div>
+          <div class="counter-text">مدرس متخصص</div>
+        </div>
+        <div class="counter-item">
+          <div class="counter-number" id="countries-counter">0</div>
+          <div class="counter-text">دولة حول العالم</div>
+        </div>
+        <div class="counter-item">
+          <div class="counter-number" id="satisfaction-counter">0</div>
+          <div class="counter-text">رضا العملاء</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="goals">
+      <div class="section-title">
+        <i class="fas fa-bullseye"></i>
+        <h2><span lang-key="goals-title">أهدافنا</span></h2>
+      </div>
+      <ul>
+        <li lang-key="goal1">تيسير تعليم القرآن الكريم وتلاوته بشكل صحيح للأطفال والكبار في جميع أنحاء العالم</li>
+        <li lang-key="goal2">تقديم تعليم مميز وفعال باستخدام أحدث وسائل وتقنيات التعليم الإلكتروني</li>
+        <li lang-key="goal3">المساهمة في الحفاظ على الهوية الإسلامية واللغة العربية لأبناء المسلمين في دول الاغتراب</li>
+        <li lang-key="goal4">تخريج جيل متمكن من القرآن الكريم قادر على تعليمه ونشره</li>
+        <li lang-key="goal5">توفير بيئة تعليمية آمنة ومحفزة لتحفيظ القرآن الكريم</li>
+      </ul>
+    </section>
+
+    <section class="section" id="features">
+      <div class="section-title">
+        <i class="fas fa-star"></i>
+        <h2><span lang-key="features-title">مميزاتنا</span></h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+          <h3 lang-key="feature1-title">مدرسون معتمدون</h3>
+          <p lang-key="feature1-desc">فريق تدريس مؤهل من خريجي الأزهر الشريف ذوي الخبرة في التعليم عن بعد</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <h3 lang-key="feature2-title">مرونة المواعيد</h3>
+          <p lang-key="feature2-desc">اختر المواعيد المناسبة لك حسب توقيت بلدك مع إمكانية تغيير الحصص</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 lang-key="feature3-title">فردي ومجموعات</h3>
+          <p lang-key="feature3-desc">دروس فردية أو مجموعات صغيرة لا تزيد عن 5 طلاب لضمان الجودة</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-gift"></i>
+          </div>
+          <h3 lang-key="feature4-title">تجربة مجانية</h3>
+          <p lang-key="feature4-desc">جرب دروسنا مع حصة تجريبية مجانية دون أي التزامات مالية</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="teachers">
+      <div class="section-title">
+        <i class="fas fa-chalkboard-teacher"></i>
+        <h2><span lang-key="teachers-title">مدرسون متخصصون</span></h2>
+      </div>
+      <div class="teachers-grid">
+        <div class="teacher-card">
+          <div class="teacher-img">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <div class="teacher-info">
+            <h3 lang-key="teacher1-name">الشيخ أحمد محمد</h3>
+            <span class="teacher-qualifications" lang-key="teacher1-qual">خريج الأزهر الشريف</span>
+            <p lang-key="teacher1-desc">مدرس متخصص في التجويد والقراءات، لديه 15 سنة خبرة في تدريس القرآن الكريم للكبار والأطفال.</p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span>(4.8)</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="teacher-card">
+          <div class="teacher-img">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <div class="teacher-info">
+            <h3 lang-key="teacher2-name">الأستاذة فاطمة علي</h3>
+            <span class="teacher-qualifications" lang-key="teacher2-qual">مدرسة تجويد معتمدة</span>
+            <p lang-key="teacher2-desc">متخصصة في تعليم الأطفال القرآن الكريم بطريقة تفاعلية وجذابة، خبرة 10 سنوات في التعليم عن بعد.</p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>(5.0)</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="teacher-card">
+          <div class="teacher-img">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <div class="teacher-info">
+            <h3 lang-key="teacher3-name">الشيخ محمود عبد الرحمن</h3>
+            <span class="teacher-qualifications" lang-key="teacher3-qual">حافظ ومجاز بالقراءات</span>
+            <p lang-key="teacher3-desc">مدرس متخصص في تحفيظ القرآن الكريم وتصحيح التلاوة، خبرة 12 سنة في تدريس الجاليات المسلمة.</p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span>(4.5)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="levels">
+      <div class="section-title">
+        <i class="fas fa-layer-group"></i>
+        <h2><span lang-key="levels-title">مستويات التعلّم</span></h2>
+      </div>
+      <div class="levels-grid">
+        <div class="level-card">
+          <i class="fas fa-seedling fa-3x" style="color: #28a745; margin-bottom: 15px;"></i>
+          <h3 lang-key="level1-title">المبتدئ</h3>
+          <p lang-key="level1-desc">تعلم أساسيات القراءة الصحيحة، أحكام التجويد البسيطة، وحفظ قصار السور</p>
+        </div>
+        
+        <div class="level-card">
+          <i class="fas fa-leaf fa-3x" style="color: #20c997; margin-bottom: 15px;"></i>
+          <h3 lang-key="level2-title">المتوسط</h3>
+          <p lang-key="level2-desc">تحسين التلاوة، تعلم أحكام التجويد المتقدمة، وحفظ أجزاء من القرآن</p>
+        </div>
+        
+        <div class="level-card">
+          <i class="fas fa-tree fa-3x" style="color: #006d8b; margin-bottom: 15px;"></i>
+          <h3 lang-key="level3-title">المتقدم</h3>
+          <p lang-key="level3-desc">إتقان التجويد، دراسة القراءات، ومشروع ختم القرآن الكريم</p>
+        </div>
+        
+        <div class="level-card">
+          <i class="fas fa-book-open fa-3x" style="color: #004e64; margin-bottom: 15px;"></i>
+          <h3 lang-key="level4-title">المراجعة</h3>
+          <p lang-key="level4-desc">مراجعة الحفظ، ضبط المتون، والإجازة بالسند المتصل</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <i class="fas fa-comments"></i>
+        <h2><span lang-key="testimonials-title">آراء طلابنا</span></h2>
+      </div>
+      <div class="testimonials">
+        <div class="testimonial">
+          <div class="testimonial-content" lang-key="testimonial1-content">
+            "لقد ساعدتني الأكاديمية على تحسين تلاوتي بشكل كبير. المدرسون صبورون ومحترفون، والمنصة سهلة الاستخدام. أنصح الجميع بالتجربة."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="author-info">
+              <h4 lang-key="testimonial1-name">سارة أحمد</h4>
+              <p lang-key="testimonial1-location">طالبة - ألمانيا</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial">
+          <div class="testimonial-content" lang-key="testimonial2-content">
+            "أطفالنا يتقدمون بشكل ملحوظ في حفظ القرآن. الطريقة التفاعلية جعلت التعليم ممتعًا لهم. شكرًا لفريق الأكاديمية على جهودهم."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="author-info">
+              <h4 lang-key="testimonial2-name">عمر الخالد</h4>
+              <p lang-key="testimonial2-location">ولي أمر - كندا</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial">
+          <div class="testimonial-content" lang-key="testimonial3-content">
+            "كبالغ مشغول، وجدت في الأكاديمية الحل الأمثل لتعلم القرآن. المرونة في المواعيد وجودة التدريس جعلت التجربة رائعة."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="author-info">
+              <h4 lang-key="testimonial3-name">يوسف محمد</h4>
+              <p lang-key="testimonial3-location">طالب - الإمارات</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم الفيديو الجديد -->
+    <section class="section" id="video-section">
+      <div class="section-title">
+        <i class="fas fa-video"></i>
+        <h2><span lang-key="video-title">فيديو تعريفي عن الأكاديمية</span></h2>
+      </div>
+      <p class="video-description" lang-key="video-description">
+        شاهد هذا الفيديو للتعرف أكثر على منهجية التدريس وبيئة التعلم في أكاديمية الفرقان
+      </p>
+      <div class="video-container">
+        <iframe 
+          src="فيديو.mp4?autoplay=1&mute=1&loop=1&playlist=فيديو.mp4" 
+          title="فيديو تعريفي عن أكاديمية الفرقان"
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+        <!-- في حالة عدم وجود فيديو، يتم عرض العنصر النائب -->
+        <div class="video-placeholder" style="display: none;">
+          <i class="fas fa-play-circle"></i>
+          <p>لإضافة فيديو، استبدل YOUR_VIDEO_ID في الكود بـ ID الفيديو من YouTube</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="registration">
+      <div class="section-title">
+        <i class="fas fa-calendar-check"></i>
+        <h2><span lang-key="registration-title">احجز أول حصة مجانية الآن</span></h2>
+      </div>
+      <div class="form-container">
+        <div class="success-message" id="success-message">
+          <i class="fas fa-check-circle fa-2x" style="color: #28a745; margin-bottom: 15px;"></i>
+          <h3>تم إرسال طلبك بنجاح!</h3>
+          <p>سيتواصل معك فريقنا خلال 24 ساعة لتأكيد الحجز وتحديد الموعد المناسب.</p>
+          <p>يمكنك التواصل معنا مباشرة عبر الواتساب للاستفسارات العاجلة.</p>
+        </div>
+        
+        <div class="form-loader" id="form-loader">
+          <div class="loader-spinner"></div>
+          <p class="loader-text">جاري إرسال البيانات...</p>
+        </div>
+        
+        <form id="registration-form" action="https://formspree.io/f/movleokr" method="POST">
+          <div class="form-group">
+            <label for="fullname" lang-key="form-name">الاسم الكامل *</label>
+            <input type="text" id="fullname" name="name" required>
+            <div class="error-message" id="name-error">الرجاء إدخال الاسم الكامل</div>
+          </div>
+          
+          <div class="form-group">
+            <label for="email" lang-key="form-email">البريد الإلكتروني *</label>
+            <input type="email" id="email" name="email" required>
+            <div class="error-message" id="email-error">الرجاء إدخال بريد إلكتروني صحيح</div>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone" lang-key="form-phone">رقم الواتساب *</label>
+            <input type="tel" id="phone" name="whatsapp" required>
+            <div class="error-message" id="phone-error">الرجاء إدخال رقم واتساب صحيح</div>
+          </div>
+          
+          <div class="form-group">
+            <label for="country" lang-key="form-country">بلد الإقامة *</label>
+            <select id="country" name="country" required>
+              <option value="" lang-key="form-country-placeholder">اختر البلد...</option>
+               <option value="germany" lang-key="country1">ألمانيا</option>
+              <option value="canada" lang-key="country2">كندا</option>
+              <option value="usa" lang-key="country3">الولايات المتحدة</option>
+              <option value="uk" lang-key="country4">بريطانيا</option>
+              <option value="uae" lang-key="country5">الإمارات</option>
+              <option value="saudi" lang-key="country6">السعودية</option>
+              <option value="Lebanon" lang-key="country7">لبنان</option>
+              <option value="Kuwait " lang-key="country8">الكويت</option>
+              <option value="Bahrain " lang-key="country9">البحرين</option>
+              <option value="Jordan" lang-key="country10">الاردن</option>
+              <option value="Morocco" lang-key="country11">المغرب</option>
+              <option value="Oman" lang-key="country12">سلطنة عمان</option>
+              <option value="Qatar" lang-key="country13">قطر</option>
+              <option value="Turkey" lang-key="country14">تركيا</option>
+              <option value="Russia" lang-key="country15">روسيا</option>
+              <option value="Australia " lang-key="country16">استراليا</option>
+              <option value="Greece " lang-key="country17">اليونان</option>
+              <option value="France " lang-key="country18">فرنسا</option>
+              <option value="Italy " lang-key="country19">ايطاليا</option>
+              <option value="South Korea " lang-key="country20">كوريا الجنوبية</option>
+              <option value="Egypt" lang-key="country21"> مصر</option>
+              <option value="Algeria" lang-key="country22"> الجزائر</option>
+              <option value="other" lang-key="country23">دول أخرى</option>
+            </select>
+            <div class="error-message" id="country-error">الرجاء اختيار بلد الإقامة</div>
+          </div>
+          
+          <div class="form-group">
+            <label for="age" lang-key="form-age">عمر الطالب *</label>
+            <input type="number" id="age" name="age" required min="5" max="80">
+            <div class="error-message" id="age-error">الرجاء إدخال عمر صحيح بين 5 و 80 سنة</div>
+          </div>
+          
+          <div class="form-group">
+            <label for="level" lang-key="form-level">المستوى الحالي *</label>
+            <select id="level" name="level" required>
+              <option value="" lang-key="form-level-placeholder">اختر المستوى...</option>
+              <option value="beginner" lang-key="level1">مبتدئ (لا خبرة)</option>
+              <option value="intermediate" lang-key="level2">متوسط (أعرف القراءة)</option>
+              <option value="advanced" lang-key="level3">متقدم (أحفظ بعض السور)</option>
+              <option value="hafiz" lang-key="level4">حافظ (أرغب في المراجعة)</option>
+            </select>
+            <div class="error-message" id="level-error">الرجاء اختيار المستوى الحالي</div>
+          </div>
+          
+          <div class="form-group" style="grid-column: span 2;">
+            <label for="notes" lang-key="form-notes">ملاحظات إضافية</label>
+            <textarea id="notes" name="notes" rows="4" lang-key="form-notes-placeholder"></textarea>
+          </div>
+          
+          <button type="submit" lang-key="form-submit">
+            <i class="fas fa-paper-plane"></i> <span lang-key="form-submit-text">إرسال طلب الحجز</span>
+          </button>
+        </form>
+        
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <span>+20 1151793980</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>alfurqanacadmy4@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <i class="fas fa-question-circle"></i>
+        <h2><span lang-key="faq-title">أسئلة متكررة</span></h2>
+      </div>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span lang-key="faq1-question">ما هي مدة الدرس الواحد؟</span> <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p lang-key="faq1-answer">مدة الدرس 30 دقيقة للأطفال و45 دقيقة للكبار. يمكن تمديد المدة حسب رغبة الطالب والاتفاق مع المدرس.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <span lang-key="faq2-question">هل هناك شهادات معتمدة بعد الانتهاء؟</span> <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p lang-key="faq2-answer">نعم، نقدم شهادات إتمام معتمدة من الأكاديمية بعد اجتياز كل مستوى من مستويات التعليم.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <span lang-key="faq3-question">ما هي وسيلة الدفع المتاحة؟</span> <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p lang-key="faq3-answer">نقبل الدفع عبر البطاقات الائتمانية، باي بال، والتحويلات البنكية. كما نوفر خيارات دفع متعددة حسب الدولة.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <span lang-key="faq4-question">هل يمكن تغيير المدرس إذا لم أكن مرتاحًا؟</span> <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p lang-key="faq4-answer">نعم، يمكنك طلب تغيير المدرس في أي وقت دون أي رسوم إضافية.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- زر الواتساب العائم -->
+  <a href="https://wa.me/201151793980" class="whatsapp-float" target="_blank" aria-label="تواصل معنا عبر الواتساب">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3 lang-key="footer-about">عن الأكاديمية</h3>
+        <p lang-key="footer-about-content">أكاديمية الفرقان منصة تعليمية رائدة في تعليم القرآن الكريم والتجويد عن بعد، نسعى لنشر تعاليم القرآن بطريقة صحيحة وسهلة للجميع حول العالم.</p>
+        <div class="social-icons">
+          <a href="https://wa.me/201151793980" class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/share/1GzuytfCb4/" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/alfurqanacadmy" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3 lang-key="footer-links">روابط سريعة</h3>
+        <ul class="contact-info">
+          <li><a href="#about" lang-key="footer-link1" style="color:white !important; font-weight:bold;">الرئيسية</a></li>
+          <li><a href="#about" lang-key="footer-link2" style="color:white !important; font-weight:bold;">من نحن</a></li>
+          <li><a href="#registration" lang-key="footer-link3" style="color:white !important; font-weight:bold;">التسجيل</a></li>
+          <li><a href="https://wa.me/201151793980" lang-key="footer-link4" style="color:white !important; font-weight:bold;">الأسعار</a></li>
+          <li><a href="https://wa.me/201151793980" lang-key="footer-link5" style="color:white !important; font-weight:bold;">اتصل بنا</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3 lang-key="footer-contact">تواصل معنا</h3>
+        <ul class="contact-info">
+          <li><i class="fas fa-envelope"></i>alfurqanacadmy4@gmail.com</li>
+          <li><i class="fab fa-whatsapp"></i> +20 115 179 3980</li>
+          <li><i class="fas fa-phone"></i> +20 109 497 4309</li>
+          <li><i class="fas fa-map-marker-alt"></i> <span lang-key="footer-location">القاهرة، مصر</span></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <span lang-key="copyright">جميع الحقوق محفوظة 2025 أكاديمية الفرقان</span>
+    </div>
+  </footer>
+
+  <script>
+    // ترجمة المحتوى للغات المختلفة
+    const translations = {
+      ar: {
+        "loading": "جاري التحميل...",
+        "site-title": "أكاديمية الفرقان",
+        "site-subtitle": "تعليم القرآن والتجويد للأطفال والكبار أونلاين مع أفضل المدرسين",
+        "free-trial-button": "احجز حصتك المجانية الآن",
+        "about-title": "من نحن؟",
+        "about-content": "أكاديمية الفرقان هي منصة تعليمية رائدة متخصصة في تعليم القرآن الكريم والتجويد واللغة العربية عن بُعد. نخدم طلاب الجاليات المسلمة في أوروبا وأمريكا والخليج العربي. نتميز بأساليب تعليمية حديثة، مع نخبة من المدرسين المؤهلين من الأزهر الشريف، حيث نقدم تجربة تعليمية تفاعلية وممتعة تناسب جميع الأعمار.",
+        "satisfaction": "رضا العملاء",
+        "goals-title": "أهدافنا",
+        "goal1": "تيسير تعليم القرآن الكريم وتلاوته بشكل صحيح للأطفال والكبار في جميع أنحاء العالم",
+        "goal2": "تقديم تعليم مميز وفعال باستخدام أحدث وسائل وتقنيات التعليم الإلكتروني",
+        "goal3": "المساهمة في الحفاظ على الهوية الإسلامية واللغة العربية لأبناء المسلمين في دول الاغتراب",
+        "goal4": "تخريج جيل متمكن من القرآن الكريم قادر على تعليمه ونشره",
+        "goal5": "توفير بيئة تعليمية آمنة ومحفزة لتحفيظ القرآن الكريم",
+        "features-title": "مميزاتنا",
+        "feature1-title": "مدرسون معتمدون",
+        "feature1-desc": "فريق تدريس مؤهل من خريجي الأزهر الشريف ذوي الخبرة في التعليم عن بعد",
+        "feature2-title": "مرونة المواعيد",
+        "feature2-desc": "اختر المواعيد المناسبة لك حسب توقيت بلدك مع إمكانية تغيير الحصص",
+        "feature3-title": "فردي ومجموعات",
+        "feature3-desc": "دروس فردية أو مجموعات صغيرة لا تزيد عن 5 طلاب لضمان الجودة",
+        "feature4-title": "تجربة مجانية",
+        "feature4-desc": "جرب دروسنا مع حصة تجريبية مجانية دون أي التزامات مالية",
+        "teachers-title": "مدرسون متخصصون",
+        "teacher1-name": "الشيخ أحمد محمد",
+        "teacher1-qual": "خريج الأزهر الشريف",
+        "teacher1-desc": "مدرس متخصص في التجويد والقراءات، لديه 15 سنة خبرة في تدريس القرآن الكريم للكبار والأطفال.",
+        "teacher2-name": "الأستاذة فاطمة علي",
+        "teacher2-qual": "مدرسة تجويد معتمدة",
+        "teacher2-desc": "متخصصة في تعليم الأطفال القرآن الكريم بطريقة تفاعلية وجذابة، خبرة 10 سنوات في التعليم عن بعد.",
+        "teacher3-name": "الشيخ محمود عبد الرحمن",
+        "teacher3-qual": "حافظ ومجاز بالقراءات",
+        "teacher3-desc": "مدرس متخصص في تحفيظ القرآن الكريم وتصحيح التلاوة، خبرة 12 سنة في تدريس الجاليات المسلمة.",
+        "levels-title": "مستويات التعلّم",
+        "level1-title": "المبتدئ",
+        "level1-desc": "تعلم أساسيات القراءة الصحيحة، أحكام التجويد البسيطة، وحفظ قصار السور",
+        "level2-title": "المتوسط",
+        "level2-desc": "تحسين التلاوة، تعلم أحكام التجويد المتقدمة، وحفظ أجزاء من القرآن",
+        "level3-title": "المتقدم",
+        "level3-desc": "إتقان التجويد، دراسة القراءات، ومشروع ختم القرآن الكريم",
+        "level4-title": "المراجعة",
+        "level4-desc": "مراجعة الحفظ، ضبط المتون، والإجازة بالسند المتصل",
+        "testimonials-title": "آراء طلابنا",
+        "testimonial1-content": "\"لقد ساعدتني الأكاديمية على تحسين تلاوتي بشكل كبير. المدرسون صبورون ومحترفون، والمنصة سهلة الاستخدام. أنصح الجميع بالتجربة.\"",
+        "testimonial1-name": "سارة أحمد",
+        "testimonial1-location": "طالبة - ألمانيا",
+        "testimonial2-content": "\"أطفالنا يتقدمون بشكل ملحوظ في حفظ القرآن. الطريقة التفاعلية جعلت التعليم ممتعًا لهم. شكرًا لفريق الأكاديمية على جهودهم.\"",
+        "testimonial2-name": "عمر الخالد",
+        "testimonial2-location": "ولي أمر - كندا",
+        "testimonial3-content": "\"كبالغ مشغول، وجدت في الأكاديمية الحل الأمثل لتعلم القرآن. المرونة في المواعيد وجودة التدريس جعلت التجربة رائعة.\"",
+        "testimonial3-name": "يوسف محمد",
+        "testimonial3-location": "طالب - الإمارات",
+        "video-title": "فيديو تعريفي عن الأكاديمية",
+        "video-description": "شاهد هذا الفيديو للتعرف أكثر على منهجية التدريس وبيئة التعلم في أكاديمية الفرقان",
+        "registration-title": "احجز أول حصة مجانية الآن",
+        "form-name": "الاسم الكامل *",
+        "form-email": "البريد الإلكتروني *",
+        "form-phone": "رقم الواتساب *",
+        "form-country": "بلد الإقامة *",
+        "form-country-placeholder": "اختر البلد...",
+        "country1": "ألمانيا",
+        "country2": "كندا",
+        "country3": "الولايات المتحدة",
+        "country4": "بريطانيا",
+        "country5": "الإمارات",
+        "country6": "السعودية",
+        "country7": "لبنان",
+        "country8": "الكويت",
+        "country9": "البحرين",
+        "country10": "الاردن",
+        "country11": "المغرب",
+        "country12": "سلطنة عمان",
+        "country13": "قطر",
+        "country14": "تركيا",
+        "country15": "روسيا",
+        "country16": "استراليا",
+        "country17": "اليونان",
+        "country18": "فرنسا",
+        "country19": "ايطاليا",
+        "country20": "كوريا الجنوبية",
+        "country21": "مصر",
+        "country22": "الجزائر",
+        "country23": "دول أخرى",
+        "form-age": "عمر الطالب *",
+        "form-level": "المستوى الحالي *",
+        "form-level-placeholder": "اختر المستوى...",
+        "level1": "مبتدئ (لا خبرة)",
+        "level2": "متوسط (أعرف القراءة)",
+        "level3": "متقدم (أحفظ بعض السور)",
+        "level4": "حافظ (أرغب في المراجعة)",
+        "form-notes": "ملاحظات إضافية",
+        "form-notes-placeholder": "هل لديك أي ملاحظات أو طلبات خاصة؟",
+        "form-submit-text": "إرسال طلب الحجز",
+        "success-message": "تم إرسال طلبك بنجاح! سيتواصل معك فريقنا خلال 24 ساعة.",
+        "faq-title": "أسئلة متكررة",
+        "faq1-question": "ما هي مدة الدرس الواحد؟",
+        "faq1-answer": "مدة الدرس 30 دقيقة للأطفال و45 دقيقة للكبار. يمكن تمديد المدة حسب رغبة الطالب والاتفاق مع المدرس.",
+        "faq2-question": "هل هناك شهادات معتمدة بعد الانتهاء؟",
+        "faq2-answer": "نعم، نقدم شهادات إتمام معتمدة من الأكاديمية بعد اجتياز كل مستوى من مستويات التعليم.",
+        "faq3-question": "ما هي وسيلة الدفع المتاحة؟",
+        "faq3-answer": "نقبل الدفع عبر البطاقات الائتمانية، باي بال، والتحويلات البنكية. كما نوفر خيارات دفع متعددة حسب الدولة.",
+        "faq4-question": "هل يمكن تغيير المدرس إذا لم أكن مرتاحًا؟",
+        "faq4-answer": "نعم، يمكنك طلب تغيير المدرس في أي وقت دون أي رسوم إضافية.",
+        "footer-about": "عن الأكاديمية",
+        "footer-about-content": "أكاديمية الفرقان منصة تعليمية رائدة في تعليم القرآن الكريم والتجويد عن بعد، نسعى لنشر تعاليم القرآن بطريقة صحيحة وسهلة للجميع حول العالم.",
+        "footer-links": "روابط سريعة",
+        "footer-link1": "الرئيسية",
+        "footer-link2": "من نحن",
+        "footer-link3": "التسجيل",
+        "footer-link4": "الأسعار",
+        "footer-link5": "اتصل بنا",
+        "footer-contact": "تواصل معنا",
+        "footer-location": "القاهرة، مصر",
+        "copyright": "جميع الحقوق محفوظة 2025 أكاديمية الفرقان",
+        "nav-about": "من نحن",
+        "nav-features": "المميزات",
+        "nav-teachers": "المدرسون",
+        "nav-levels": "المستويات",
+        "nav-registration": "التسجيل"
+      },
+      en: {
+        "loading": "Loading...",
+        "site-title": "AL-Furqan Academy",
+        "site-subtitle": "Teaching Quran and Tajweed Online for Children and Adults with the Best Teachers",
+        "free-trial-button": "Book Your Free Session Now",
+        "about-title": "About Us",
+        "about-content": "AL-Furqan Academy is a leading educational platform specialized in teaching the Holy Quran, Tajweed, and Arabic language remotely. We serve Muslim community students in Europe, America, and the Gulf region. We feature modern teaching methods with elite teachers from Al-Azhar University, providing an interactive and enjoyable learning experience suitable for all ages.",
+        "satisfaction": "Customer Satisfaction",
+        "goals-title": "Our Goals",
+        "goal1": "Facilitate teaching the Holy Quran and its correct recitation for children and adults worldwide",
+        "goal2": "Provide distinguished and effective education using the latest e-learning tools and technologies",
+        "goal3": "Contribute to preserving Islamic identity and Arabic language for Muslims abroad",
+        "goal4": "Graduate a generation proficient in the Holy Quran capable of teaching and spreading it",
+        "goal5": "Provide a safe and stimulating learning environment for Quran memorization",
+        "features-title": "Our Features",
+        "feature1-title": "Certified Teachers",
+        "feature1-desc": "Qualified teaching team from Al-Azhar University graduates with experience in distance education",
+        "feature2-title": "Flexible Schedule",
+        "feature2-desc": "Choose times that suit you according to your country's time zone with the possibility of changing sessions",
+        "feature3-title": "Individual & Groups",
+        "feature3-desc": "Private lessons or small groups of no more than 5 students to ensure quality",
+        "feature4-title": "Free Trial",
+        "feature4-desc": "Try our lessons with a free trial session without any financial obligations",
+        "teachers-title": "Specialized Teachers",
+        "teacher1-name": "Sheikh Ahmed Mohamed",
+        "teacher1-qual": "Al-Azhar University Graduate",
+        "teacher1-desc": "Specialized teacher in Tajweed and Qira'at, with 15 years of experience teaching the Holy Quran to adults and children.",
+        "teacher2-name": "Mrs. Fatima Ali",
+        "teacher2-qual": "Certified Tajweed Teacher",
+        "teacher2-desc": "Specialized in teaching children the Holy Quran in an interactive and engaging way, with 10 years of experience in distance education.",
+        "teacher3-name": "Sheikh Mahmoud Abdel Rahman",
+        "teacher3-qual": "Hafiz and Certified in Qira'at",
+        "teacher3-desc": "Specialized teacher in Quran memorization and recitation correction, with 12 years of experience teaching Muslim communities.",
+        "levels-title": "Learning Levels",
+        "level1-title": "Beginner",
+        "level1-desc": "Learn the basics of correct reading, simple Tajweed rules, and memorization of short surahs",
+        "level2-title": "Intermediate",
+        "level2-desc": "Improve recitation, learn advanced Tajweed rules, and memorize parts of the Quran",
+        "level3-title": "Advanced",
+        "level3-desc": "Master Tajweed, study Qira'at, and complete Quran memorization project",
+        "level4-title": "Revision",
+        "level4-desc": "Memorization review, text mastery, and Ijazah with connected chain",
+        "testimonials-title": "Students Testimonials",
+        "testimonial1-content": "\"The academy has greatly helped me improve my recitation. Teachers are patient and professional, and the platform is easy to use. I recommend everyone to try it.\"",
+        "testimonial1-name": "Sarah Ahmed",
+        "testimonial1-location": "Student - Germany",
+        "testimonial2-content": "\"Our children are making remarkable progress in memorizing the Quran. The interactive method made learning enjoyable for them. Thanks to the academy team for their efforts.\"",
+        "testimonial2-name": "Omar Al-Khalid",
+        "testimonial2-location": "Parent - Canada",
+        "testimonial3-content": "\"As a busy adult, I found the academy to be the perfect solution for learning the Quran. Flexibility in scheduling and quality teaching made the experience excellent.\"",
+        "testimonial3-name": "Youssef Mohamed",
+        "testimonial3-location": "Student - UAE",
+        "video-title": "Academy Introduction Video",
+        "video-description": "Watch this video to learn more about the teaching methodology and learning environment at Al-Furqan Academy",
+        "registration-title": "Book Your First Free Session Now",
+        "form-name": "Full Name *",
+        "form-email": "Email Address *",
+        "form-phone": "WhatsApp Number *",
+        "form-country": "Country of Residence *",
+        "form-country-placeholder": "Select Country...",
+        "country1": "Germany",
+        "country2": "Canada",
+        "country3": "United States",
+        "country4": "United Kingdom",
+        "country5": "UAE",
+        "country6": "Saudi Arabia",
+        "country7": "Lebanon",
+        "country8": "Kuwait ",
+        "country9": "Bahrain ",
+        "country10": "Jordan",
+        "country11": "Morocco",
+        "country12": " Oman",
+        "country13": "Qatar",
+        "country14": "Turkey",
+        "country15": "Russia",
+        "country16": "Australia ",
+        "country17": "Greece ",
+        "country18": "France ",
+        "country19": "Italy ",
+        "country20": " South Korea",
+        "country21": "Egypt",
+        "country22": "Algeria",
+        "country23": "Other Countries",
+        "form-age": "Student Age *",
+        "form-level": "Current Level *",
+        "form-level-placeholder": "Select Level...",
+        "level1": "Beginner (no experience)",
+        "level2": "Intermediate (I can read)",
+        "level3": "Advanced (I memorize some surahs)",
+        "level4": "Hafiz (I want to review)",
+        "form-notes": "Additional Notes",
+        "form-notes-placeholder": "Do you have any special notes or requests?",
+        "form-submit-text": "Send Booking Request",
+        "success-message": "Your request has been sent successfully! Our team will contact you within 24 hours.",
+        "faq-title": "Frequently Asked Questions",
+        "faq1-question": "What is the duration of one lesson?",
+        "faq1-answer": "The lesson duration is 30 minutes for children and 45 minutes for adults. Duration can be extended according to the student's wish and agreement with the teacher.",
+        "faq2-question": "Are there certified certificates upon completion?",
+        "faq2-answer": "Yes, we provide accredited completion certificates from the academy after passing each educational level.",
+        "faq3-question": "What payment methods are available?",
+        "faq3-answer": "We accept payment via credit cards, PayPal, and bank transfers. We also provide multiple payment options according to the country.",
+        "faq4-question": "Can I change the teacher if I'm not comfortable?",
+        "faq4-answer": "Yes, you can request to change the teacher at any time without any additional fees.",
+        "footer-about": "About the Academy",
+        "footer-about-content": "AL-Furqan Academy is a leading educational platform in teaching the Holy Quran and Tajweed remotely, striving to spread Quran teachings correctly and easily to everyone around the world.",
+        "footer-links": "Quick Links",
+        "footer-link1": "Home",
+        "footer-link2": "About Us",
+        "footer-link3": "Registration",
+        "footer-link4": "Pricing",
+        "footer-link5": "Contact Us",
+        "footer-contact": "Contact Us",
+        "footer-location": "Cairo, Egypt",
+        "copyright": "All Rights Reserved 2025 AL-Furqan Academy",
+        "nav-about": "About Us",
+        "nav-features": "Features",
+        "nav-teachers": "Teachers",
+        "nav-levels": "Levels",
+        "nav-registration": "Registration"
+      },
+      fr: {
+        "loading": "Chargement...",
+        "site-title": "Académie AL-Furqan",
+        "site-subtitle": "Enseignement du Coran et du Tajweed en ligne pour enfants et adultes avec les meilleurs enseignants",
+        "free-trial-button": "Réservez votre séance gratuite maintenant",
+        "about-title": "Qui sommes-nous?",
+        "about-content": "L'Académie AL-Furqan est une plateforme éducative de premier plan spécialisée dans l'enseignement du Saint Coran, du Tajweed et de la langue arabe à distance. Nous servons les étudiants des communautés musulmanes en Europe, en Amérique et dans la région du Golfe. Nous proposons des méthodes d'enseignement modernes avec des enseignants d'élite de l'Université Al-Azhar, offrant une expérience d'apprentissage interactive et agréable adaptée à tous les âges.",
+        "satisfaction": "Satisfaction des clients",
+        "goals-title": "Nos objectifs",
+        "goal1": "Faciliter l'enseignement du Saint Coran et sa récitation correcte pour les enfants et les adultes du monde entier",
+        "goal2": "Fournir une éducation distinguée et efficace en utilisant les derniers outils et technologies d'apprentissage en ligne",
+        "goal3": "Contribuer à préserver l'identité islamique et la langue arabe pour les musulmans à l'étranger",
+        "goal4": "Former une génération compétente dans le Saint Coran capable de l'enseigner et de le diffuser",
+        "goal5": "Fournir un environnement d'apprentissage sûr et stimulant pour la mémorisation du Coran",
+        "features-title": "Nos caractéristiques",
+        "feature1-title": "Enseignants certifiés",
+        "feature1-desc": "Équipe pédagogique qualifiée de diplômés de l'Université Al-Azhar avec une expérience en enseignement à distance",
+        "feature2-title": "Emploi du temps flexible",
+        "feature2-desc": "Choisissez les horaires qui vous conviennent selon votre fuseau horaire avec la possibilité de changer les séances",
+        "feature3-title": "Individuel et groupes",
+        "feature3-desc": "Cours particuliers ou petits groupes de pas plus de 5 étudiants pour garantir la qualité",
+        "feature4-title": "Essai gratuit",
+        "feature4-desc": "Essayez nos cours avec une séance d'essai gratuite sans aucun engagement financier",
+        "teachers-title": "Enseignants spécialisés",
+        "teacher1-name": "Cheikh Ahmed Mohamed",
+        "teacher1-qual": "Diplômé de l'Université Al-Azhar",
+        "teacher1-desc": "Enseignant spécialisé en Tajweed et Qira'at, avec 15 ans d'expérience dans l'enseignement du Saint Coran aux adultes et aux enfants.",
+        "teacher2-name": "Mme Fatima Ali",
+        "teacher2-qual": "Enseignante de Tajweed certifiée",
+        "teacher2-desc": "Spécialisée dans l'enseignement du Saint Coran aux enfants de manière interactive et engageante, avec 10 ans d'expérience en enseignement à distance.",
+        "teacher3-name": "Cheikh Mahmoud Abdel Rahman",
+        "teacher3-qual": "Hafiz et certifié en Qira'at",
+        "teacher3-desc": "Enseignant spécialisé dans la mémorisation du Coran et la correction de la récitation, avec 12 ans d'expérience dans l'enseignement des communautés musulmanes.",
+        "levels-title": "Niveaux d'apprentissage",
+        "level1-title": "Débutant",
+        "level1-desc": "Apprendre les bases de la lecture correcte، les règles simples du Tajweed et la mémorisation des sourates courtes",
+        "level2-title": "Intermédiaire",
+        "level2-desc": "Améliorer la récitation، apprendre les règles avancées du Tajweed et mémoriser des parties du Coran",
+        "level3-title": "Avancé",
+        "level3-desc": "Maîtriser le Tajweed, étudier les Qira'at et compléter le projet de mémorisation du Coran",
+        "level4-title": "Révision",
+        "level4-desc": "Révision de la mémorisation, maîtrise des textes et Ijazah avec chaîne connectée",
+        "testimonials-title": "Témoignages de nos étudiants",
+        "testimonial1-content": "\"L'académie m'a beaucoup aidé à améliorer ma récitation. Les enseignants sont patients et professionnels, et la plateforme est facile à utiliser. Je recommande à tous d'essayer.\"",
+        "testimonial1-name": "Sarah Ahmed",
+        "testimonial1-location": "Étudiante - Allemagne",
+        "testimonial2-content": "\"Nos enfants progressent remarquablement dans la mémorisation du Coran. La méthode interactive a rendu l'apprentissage agréable pour eux. Merci à l'équipe de l'académie pour ses efforts.\"",
+        "testimonial2-name": "Omar Al-Khalid",
+        "testimonial2-location": "Parent - Canada",
+        "testimonial3-content": "\"En tant qu'adulte occupé, j'ai trouvé dans l'académie la solution idéale pour apprendre le Coran. La flexibilité des horaires et la qualité de l'enseignement ont rendu l'expérience excellente.\"",
+        "testimonial3-name": "Youssef Mohamed",
+        "testimonial3-location": "Étudiant - Émirats Arabes Unis",
+        "video-title": "Vidéo de présentation de l'Académie",
+        "video-description": "Regardez cette vidéo pour en savoir plus sur la méthodologie d'enseignement et l'environnement d'apprentissage à l'Académie Al-Furqan",
+        "registration-title": "Réservez votre première séance gratuite maintenant",
+        "form-name": "Nom complet *",
+        "form-email": "Adresse e-mail *",
+        "form-phone": "Numéro WhatsApp *",
+        "form-country": "Pays de résidence *",
+        "form-country-placeholder": "Sélectionnez un pays...",
+        "country1": "Allemagne",
+        "country2": "Canada",
+        "country3": "États-Unis",
+        "country4": "Royaume-Uni",
+        "country5": "Émirats Arabes Unis",
+        "country6": "Arabie Saoudite",
+        "country7": "Liban ",
+        "country8": "Koweït ",
+        "country9": "Bahreïn ",
+        "country10": "Jordanie ",
+        "country11": " Maroc",
+        "country12": "Oman ",
+        "country13": "Qatar ",
+        "country14": "Turquie ",
+        "country15": "Russie",
+        "country16": "Australie ",
+        "country17": "Grèce ",
+        "country18": "France ",
+        "country19": "Italie ",
+        "country20": "Corée du Sud ",
+        "country21": "Égypte ",
+        "country22": "Algérie ",
+        "country23": "Autres pays", 
+        "form-age": "Âge de l'étudiant *",
+        "form-level": "Niveau actuel *",
+        "form-level-placeholder": "Sélectionnez un niveau...",
+        "level1": "Débutant (aucune expérience)",
+        "level2": "Intermédiaire (je sais lire)",
+        "level3": "Avancé (je mémorise quelques sourates)",
+        "level4": "Hafiz (je veux réviser)",
+        "form-notes": "Remarques supplémentaires",
+        "form-notes-placeholder": "Avez-vous des commentaires ou demandes particulières?",
+        "form-submit-text": "Envoyer la demande de réservation",
+        "success-message": "Votre demande a été envoyée avec succès ! Notre équipe vous contactera dans les 24 heures.",
+        "faq-title": "Questions fréquemment posées",
+        "faq1-question": "Quelle est la durée d'une leçon?",
+        "faq1-answer": "La durée de la leçon est de 30 minutes pour les enfants et de 45 minutes pour les adultes. La durée peut être prolongée selon le souhait de l'étudiant et en accord avec l'enseignant.",
+        "faq2-question": "Y a-t-il des certificats accrédités à la fin?",
+        "faq2-answer": "Oui, nous délivrons des certificats d'achèvement accrédités par l'académie après avoir réussi chaque niveau d'enseignement.",
+        "faq3-question": "Quels sont les moyens de paiement disponibles?",
+        "faq3-answer": "Nous acceptons les paiements par carte de crédit, PayPal et virements bancaires. Nous proposons également plusieurs options de paiement selon le pays.",
+        "faq4-question": "Puis-je changer d'enseignant si je ne suis pas à l'aise?",
+        "faq4-answer": "Oui, vous pouvez demander à changer d'enseignant à tout moment sans frais supplémentaires.",
+        "footer-about": "À propos de l'Académie",
+        "footer-about-content": "L'Académie AL-Furqan est une plateforme éducative de premier plan dans l'enseignement du Saint Coran et du Tajweed à distance, s'efforçant de diffuser les enseignements du Coran correctement et facilement à tous à travers le monde.",
+        "footer-links": "Liens rapides",
+        "footer-link1": "Accueil",
+        "footer-link2": "À propos de nous",
+        "footer-link3": "Inscription",
+        "footer-link4": "Tarifs",
+        "footer-link5": "Contactez-nous",
+        "footer-contact": "Contactez-nous",
+        "footer-location": "Le Caire, Égypte",
+        "copyright": "Tous droits réservés 2025 Académie AL-Furqan",
+        "nav-about": "À propos",
+        "nav-features": "Caractéristiques",
+        "nav-teachers": "Enseignants",
+        "nav-levels": "Niveaux",
+        "nav-registration": "Inscription"
+      }
+    };
+
+    // تغيير اللغة
+    function changeLanguage(lang) {
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      
+      document.querySelectorAll('[lang-key]').forEach(element => {
+        const key = element.getAttribute('lang-key');
+        if (translations[lang][key]) {
+          if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+            element.placeholder = translations[lang][key];
+          } else if (element.tagName === 'OPTION') {
+            element.textContent = translations[lang][key];
+          } else {
+            element.textContent = translations[lang][key];
+          }
+        }
+      });
+      
+      // تحديث العناصر المحددة في النموذج
+      document.getElementById('notes').placeholder = translations[lang]["form-notes-placeholder"];
+      
+      // تحديث خيارات القوائم المنسدلة
+      document.querySelectorAll('#country option, #level option').forEach(option => {
+        const key = option.getAttribute('lang-key');
+        if (key && translations[lang][key]) {
+          option.textContent = translations[lang][key];
+        }
+      });
+    }
+
+    // تفعيل تغيير اللغة عند النقر على الأزرار
+    document.querySelectorAll('.lang-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelector('.lang-btn.active').classList.remove('active');
+        button.classList.add('active');
+        const lang = button.getAttribute('data-lang');
+        changeLanguage(lang);
+      });
+    });
+
+    // FAQ toggle functionality
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        const icon = question.querySelector('i');
+        
+        if (answer.style.display === 'block') {
+          answer.style.display = 'none';
+          icon.classList.remove('fa-chevron-up');
+          icon.classList.add('fa-chevron-down');
+        } else {
+          answer.style.display = 'block';
+          icon.classList.remove('fa-chevron-down');
+          icon.classList.add('fa-chevron-up');
+        }
+      });
+    });
+    
+    // Form submission
+    document.getElementById('registration-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      // التحقق من صحة البيانات
+      if (validateForm()) {
+        try {
+          // إظهار مؤشر التحميل
+          document.getElementById('form-loader').classList.add('active');
+          
+          // إرسال البيانات باستخدام Fetch API
+          const formData = new FormData(this);
+          
+          const response = await fetch(this.action, {
+            method: this.method,
+            body: formData,
+            headers: {
+              'Accept': 'application/json'
+            }
+          });
+          
+          if (response.ok) {
+            // إخفاء النموذج وإظهار رسالة النجاح
+            this.style.display = 'none';
+            document.getElementById('success-message').style.display = 'block';
+            document.getElementById('success-message').classList.add('show');
+            
+            // إعادة تعيين النموذج بعد التأكيد
+            this.reset();
+          } else {
+            throw new Error('حدث خطأ أثناء الإرسال');
+          }
+        } catch (error) {
+          alert('حدث خطأ أثناء إرسال البيانات: ' + error.message);
+        } finally {
+          // إخفاء مؤشر التحميل
+          document.getElementById('form-loader').classList.remove('active');
+        }
+      }
+    });
+    
+    // وظيفة التحقق من صحة البيانات
+    function validateForm() {
+      let isValid = true;
+      const name = document.getElementById('fullname');
+      const email = document.getElementById('email');
+      const phone = document.getElementById('phone');
+      const country = document.getElementById('country');
+      const age = document.getElementById('age');
+      const level = document.getElementById('level');
+      
+      // إخفاء جميع رسائل الخطأ
+      document.querySelectorAll('.error-message').forEach(el => {
+        el.style.display = 'none';
+      });
+      
+      // التحقق من الاسم
+      if (!name.value.trim()) {
+        document.getElementById('name-error').style.display = 'block';
+        isValid = false;
+      }
+      
+      // التحقق من البريد الإلكتروني
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email.value)) {
+        document.getElementById('email-error').style.display = 'block';
+        isValid = false;
+      }
+      
+      // التحقق من رقم الهاتف
+      const phoneRegex = /^[0-9+]{8,15}$/;
+      if (!phoneRegex.test(phone.value)) {
+        document.getElementById('phone-error').style.display = 'block';
+        isValid = false;
+      }
+      
+      // التحقق من البلد
+      if (!country.value) {
+        document.getElementById('country-error').style.display = 'block';
+        isValid = false;
+      }
+      
+      // التحقق من العمر
+      if (!age.value || age.value < 5 || age.value > 80) {
+        document.getElementById('age-error').style.display = 'block';
+        isValid = false;
+      }
+      
+      // التحقق من المستوى
+      if (!level.value) {
+        document.getElementById('level-error').style.display = 'block';
+        isValid = false;
+      }
+      
+      return isValid;
+    }
+    
+    // تحسين تجربة المستخدم: إظهار رسائل الخطأ أثناء الكتابة
+    const inputs = document.querySelectorAll('input, select, textarea');
+    inputs.forEach(input => {
+      input.addEventListener('input', function() {
+        const errorId = this.id + '-error';
+        const errorElement = document.getElementById(errorId);
+        if (errorElement) {
+          errorElement.style.display = 'none';
+        }
+      });
+    });
+
+    // إظهار شريط التقدم في الأعلى
+    window.addEventListener('scroll', () => {
+      const scrollTop = document.documentElement.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrollPercent = (scrollTop / scrollHeight) * 100;
+      document.getElementById('progressTop').style.width = scrollPercent + '%';
+      
+      // إظهار زر العودة للأعلى
+      const backToTop = document.getElementById('backToTop');
+      if (scrollTop > 300) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+      
+      // تحديث القائمة النشطة
+      const sections = document.querySelectorAll('.section');
+      const navLinks = document.querySelectorAll('.nav-item a');
+      
+      let currentSection = '';
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (scrollTop >= sectionTop - 100) {
+          currentSection = section.getAttribute('id');
+        }
+      });
+      
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').substring(1) === currentSection) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // العودة إلى الأعلى
+    document.getElementById('backToTop').addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // تهيئة الموقع عند التحميل - بدون شاشة تحميل
+    window.addEventListener('load', () => {
+      // تشغيل الرسوم المتحركة للأقسام مباشرة
+      document.querySelectorAll('.section').forEach((section, index) => {
+        setTimeout(() => {
+          section.classList.add('animated');
+        }, index * 200);
+      });
+      
+      // تشغيل عداد الأرقام مباشرة
+      function animateCounter(id, target, duration) {
+        const element = document.getElementById(id);
+        let start = 0;
+        const increment = target / (duration / 16);
+        
+        const timer = setInterval(() => {
+          start += increment;
+          if (start >= target) {
+            element.textContent = target;
+            clearInterval(timer);
+          } else {
+            element.textContent = Math.ceil(start);
+          }
+        }, 16);
+      }
+      
+      // تشغيل العدادات مع تأخير بسيط
+      setTimeout(() => {
+        animateCounter('students-counter', 2500, 2000);
+        animateCounter('teachers-counter', 32, 1500);
+        animateCounter('countries-counter', 45, 1800);
+        animateCounter('satisfaction-counter', 95, 2200);
+      }, 500);
+    });
+    
+    // التنقل السلس
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+    
+    // تهيئة اللغة عند التحميل
+    document.addEventListener('DOMContentLoaded', function() {
+      changeLanguage('ar');
+    });
+  </script>
+</body>
+</html>
